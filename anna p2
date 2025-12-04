@@ -84,14 +84,14 @@
 
     <table>
         <tr>
-            <th>Surface</th>
-            <th>Frequency (Hz)</th>
+            <th>Area of Violin</th>
+            <th>Frequency/Hz</th>
         </tr>
-        <tr><td>Air</td><td>2</td></tr>
-        <tr><td>Wood</td><td>4</td></tr>
-        <tr><td>Sand</td><td>5</td></tr>
-        <tr><td>17.4 m</td><td>7</td></tr>
-        <tr><td>8.8 m</td><td>9</td></tr>
+        <tr><td>f holes</td><td>294</td></tr>
+        <tr><td>Open G string</td><td>196</td></tr>
+        <tr><td>Highest frequency on E string</td><td>3520</td></tr>
+        <tr><td>scroll/BO mode</td><td>275</td></tr>
+        <tr><td>neck</td><td>555</td></tr>
     </table>
 
     <!-- BRIDGES -->
