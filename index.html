@@ -138,20 +138,27 @@
     <!-- GITHUB LAST MODIFIED SECTION -->
 <!-- Placeholder for total word count -->
 <p id="totalWordCount"></p>
-<hr>
+
 <script>
-  function displayWordCount(sectionId, outputId) {
-    const text = document.getElementById(sectionId).textContent;
-    const wordArray = text.trim().split(/\s+/)
-    const wordCount = wordArray.length;
-    return wordCount;
+  // Function to count words in a section by its ID
+  function getWordCount(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (!section) return 0;
+    const text = section.textContent || "";
+    const words = text.trim().split(/\s+/);
+    return words.filter(word => word.length > 0).length;
   }
+
+  // Function to calculate total word count
   function displayTotalWordCount() {
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    const totalWordCount = IntroductionCount + AnalysisCount;
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    const sections = ["Abstract", "Violins", "Bridges", "Radios"];
+    let total = 0;
+    sections.forEach(id => {
+      total += getWordCount(id);
+    });
+    document.getElementById("totalWordCount").innerText = `Total word count: ${total}`;
   }
+
   window.onload = displayTotalWordCount;
 </script>
 
