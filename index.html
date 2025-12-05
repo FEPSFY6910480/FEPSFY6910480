@@ -135,13 +135,8 @@
         TDK (2025) What is Resonance Phenomenon? Mechanism of tuning circuits. Avaliable at: <a href="https://www.tdk.com/en/tech-mag/inductive/what-is-the-resonance">https://www.tdk.com/en/tech-mag/inductive/what-is-the-resonance</a> (Last accessed: 2025)
     </p>
 
-    <!-- GITHUB LAST MODIFIED SECTION -->
-<!-- Placeholder for total word count -->
-<!-- Placeholder for total word count -->
 <p id="totalWordCount" style="font-weight:bold; margin-top:20px;"></p>
-
 <script>
-  // Function to count words in a section by its ID
   function getWordCount(sectionId) {
     const section = document.getElementById(sectionId);
     if (!section) return 0;
@@ -149,8 +144,6 @@
     const words = text.trim().split(/\s+/);
     return words.filter(word => word.length > 0).length;
   }
-
-  // Function to display word counts
   function displayWordCount() {
     const sections = ["Abstract", "Violins", "Bridges", "Radios"];
     let total = 0;
@@ -165,8 +158,6 @@
     output += `<strong>Total word count: ${total}</strong>`;
     document.getElementById("totalWordCount").innerHTML = output;
   }
-
-  // Run on page load
   window.onload = function() {
     displayWordCount();
   };
