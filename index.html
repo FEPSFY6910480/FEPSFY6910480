@@ -152,7 +152,7 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
+    const AbstractCount = displayWordCount("Abstract");
     const ViolinsCount = displayWordCount("Violins_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = AbstractCount + ViolinsCount;
@@ -161,6 +161,7 @@
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
+    
 </script>
     
     <div id="last-updated">Loading last update time...</div>
