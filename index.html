@@ -154,10 +154,11 @@
     // Read from the paragraph IDs
     const AbstractCount = displayWordCount("Abstract_Text");
     const ViolinsCount = displayWordCount("Violins_Text");
+    const ViolinsCount_Title = displayWordCount("Violins");
     const BridgesCount = displayWordCount("Bridges_Text");
     const RadiosCount = displayWordCount("Radios_Text");
 
-    const totalWordCount = ViolinsCount + BridgesCount + RadiosCount;
+    const totalWordCount = ViolinsCount + ViolinsCount_Title + BridgesCount + RadiosCount;
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
 
