@@ -156,9 +156,11 @@
     const ViolinsCount = displayWordCount("Violins_Text");
     const ViolinsCount_Title = displayWordCount("Violins");
     const BridgesCount = displayWordCount("Bridges_Text");
+    const BridgesCount_Title = displayWordCount("Bridges");
     const RadiosCount = displayWordCount("Radios_Text");
+    const RadiosCount_Title = displayWordCount("Radios");
 
-    const totalWordCount = ViolinsCount + ViolinsCount_Title + BridgesCount + RadiosCount;
+    const totalWordCount = ViolinsCount + ViolinsCount_Title + BridgesCount + BrigesCount_Title + RadiosCount + RadiosCount_Title;
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
 
